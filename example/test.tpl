@@ -1,4 +1,1 @@
-Hello-{$name}-
-{*-*}
-asd
-{*Comments to hide*}
+{$name[0]}

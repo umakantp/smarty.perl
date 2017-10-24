@@ -7,7 +7,9 @@ use Smarty;
 my $smarty = new Smarty();
 $smarty->addTemplateDir('E:\exp\smarty.perl\smarty.perl\example');
 
+my @child = ('world!');
+
 my %data = (
-  'name' => 'world!'
+  'name' => \@child
 );
-print $smarty->display('test.tpl', \%data);
+print $smarty->display('test.tpl', (\%data));
